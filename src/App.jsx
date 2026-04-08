@@ -24,7 +24,8 @@ const columns = [
     },
     {
         value: "action",
-        text: "Delete",
+        action: "Delete",
+        text: "",
         style: {
             width: `100px`,
             background: `none`,
@@ -135,7 +136,7 @@ function App() {
                                                     deleteStudent(student.id)
                                                 }
                                             >
-                                                {column.text}
+                                                {column.action}
                                             </button>
                                         ) : (
                                             student[column.value]
